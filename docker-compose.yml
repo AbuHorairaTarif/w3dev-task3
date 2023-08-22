@@ -1,0 +1,44 @@
+# version: '3.7'
+
+# services:
+#   web:
+#     image: python:3.8-slim
+#     container_name: flask-app
+#     volumes:
+#       - ./app:/app
+#     environment:
+#       - FLASK_APP=app.py
+#       - FLASK_ENV=development
+#     ports:
+#       - "5000:5000"
+#     command: ["flask", "run", "--host=0.0.0.0"]
+#     depends_on:
+#       - postgres  # Wait for the database service to be ready
+
+  
+#   postgres:
+#     image: postgres:12
+#     container_name: postgres-db-new
+#     environment:
+#       POSTGRES_DB: testDB
+#       POSTGRES_USER: myuser
+#       POSTGRES_PASSWORD: mypassword
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
+
+#   pgadmin:
+#     image: dpage/pgadmin4
+#     container_name: pgadmin
+#     environment:
+#       PGADMIN_DEFAULT_EMAIL: admin@example.com
+#       PGADMIN_DEFAULT_PASSWORD: adminpassword
+#     ports:
+#       - "8080:80"
+#     depends_on:
+#       - postgres  # Wait for the database service to be ready
+
+# volumes:
+#   postgres_data:
+#   pgadmin_data:
